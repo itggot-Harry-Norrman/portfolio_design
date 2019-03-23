@@ -1,0 +1,287 @@
+/* 
+
+BASICS
+
+*/
+:root {
+    --highlights: #34b4ff;
+    --basic-bg: #111111;
+    --basic-t: cubic-bezier(.17,.67,.83,.67);
+    --font-mono: 'Major Mono Display', monospace;
+    --fomt-stand: 'Neueimport', sans-serif;
+}
+@font-face {
+    font-family: Neueimport;
+    src: url("NeueT.otf");
+}
+body {
+    width: 100vw;
+    height: 200vh;
+    background-size: 100vw, 100vh;
+    overflow-x: hidden;
+    font-family: 'Neueimport', sans-serif;
+    margin: 0; 
+}
+h1 {
+    margin: 0;
+    font-size: 5em;
+    font-weight: bolder;
+    color: white;
+}
+.testet {
+    background-color: #af0808;
+}
+.testet2 {
+    background-color: #7159fa;
+}
+
+/* 
+
+WINDOWS
+
+*/
+
+.parallax-window {
+    height: 85vh;
+    width: 100vw;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.indexing {
+    z-index: 1;
+    width: 1920px;
+    height: 1050px;
+}
+.info {
+    height: 80vh;
+    width: 200vw;
+    left: 0;
+    background-color: var(--basic-bg);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+}
+.parallax2 {
+    height: 85vh;
+    width: 100vw;
+}
+.main_info {
+    height: 85vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 
+
+MAIN WINDOW
+
+*/
+.quote {
+    font-family: var(--font-mono);
+    color: white;
+    font-size: 2em;
+}
+.quote_box {
+    margin-top: 150px;
+    height:150px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    z-index: 9999;
+}
+.quote_box h2 {
+    margin: 0;
+}
+.q_pos {
+    margin-top: 10px !important;
+    align-self: flex-end;
+
+}
+/*  
+
+NAV
+
+*/
+nav {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav_box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo_img {
+    width: 120px;
+    height: 120px;
+}
+
+.logo {
+    margin: 10px;
+    width: 50vw;
+    z-index: 9999;
+}
+.nav_pos {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.c_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+    font-family: var(--font-mono);
+    transition: 1s;
+    transition: var(--basic-t);
+}
+.line {
+    height: 2px;
+    width: 4px;
+    transition-timing-function: var(--basic-t);
+    transition: 0.8s;
+    background-color: white;
+}
+.c_box:hover .line {
+    width: 80px;
+    transition-timing-function: var(--basic-t);
+    transition: 0.6s;
+    background-color: var(--highlights);
+}
+.c_box h2 {
+    transition-timing-function: var(--basic-t);
+    transition: 0.6s;
+    color: white;
+}
+.c_box:hover h2 {
+    color: var(--highlights);
+    transition-timing-function: var(--basic-t);
+    transition: 0.6s;
+}
+
+/* 
+
+INFO WINDOW
+
+*/
+.title {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    padding-left: 40px;
+}
+.slide1 {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    position: relative;
+}
+.title h2 {
+    margin: 0;
+    color: white;
+    font-size: 5em;
+}
+.profile_sz {
+    height: 350px;
+    width: 350px;
+}
+.img_box {
+    padding-left: 40px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.descript {
+    height: 350px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.descript h3 {
+    color: white;
+    font-size: 2em;
+}
+.material-icons.md-64 { 
+    font-size: 64px; 
+    filter: invert(100);
+    width: 25px;
+}
+.next_slide {
+    position: absolute;
+    top: calc(40vh - 32px);
+    right: 100px;
+    animation-name: arrows;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+.slide2 {
+    width: 100vw;
+    height: 80vh;
+    background-color: var(--basic-bg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.width_d {
+    left: -100vw;
+    transition: 0.8s;
+}
+.printlab {
+    width: 40vw;
+}
+.projects {
+    margin: 30px;
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.projects:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.3s;
+}
+.project_text {
+    color: white;
+    font-size: 1.4em;
+}
+.line_p {
+    height: 2px;
+    width: 10px;
+    transition: 0.6s;
+    background-color: white;
+}
+.projects:hover .line_p {
+    width: 10vw;
+}
+/* 
+
+ANIMATIONS
+
+*/
+@keyframes arrows {
+    0% {right: 100px}
+    50% {right: 120px}
+    100% {right: 100px}
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Thasadith" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<body onload="onStart()">
+    <div class="parallax-window" id="scene">
+        <img data-depth="0.1" class="indexing" src="./img/bg2.png" alt="">
+    </div>
+    <div class="main_info">
+        <nav>
+            <div class="logo">
+                <div class="nav_box">
+                    <img class="logo_img" src="./img/logo.png" alt="">
+                </div>
+            </div>
+            <div class="nav_pos">
+                <div class="c_box" id="c1">
+                    <h2>about</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="c_box" id="c2">
+                    <h2>projects</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="c_box" id="c3">
+                    <h2>prices</h2>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </nav>
+        <div class="quote_box">
+                <h2 class="quote">"</h2>
+                <h2 class="quote">the simple Way</h2>
+                <h2 class="quote q_pos">"</h2>
+            </div>
+    </div>
+    <div class="info">
+        <div class="slide1">
+            <div class="title">
+                <h2>
+                    So Who Am I?
+                </h2>
+
+            </div>
+            <div class="img_box">
+                <img class="profile_sz" src="./img/stickman.png" alt="">
+                <div class="descript">
+                    <h3>
+                        Harry Norrman
+                    </h3>
+                    <h3>
+                        Fullstack web developer
+                    </h3>
+                    <h3>
+                        Working in ruby rails
+                    </h3>
+                </div>
+            </div>
+            <div class="next_slide">
+                <i class="material-icons md-64">
+                    keyboard_arrow_right
+                </i>
+                <i class="material-icons md-64">
+                    keyboard_arrow_right
+                </i>
+            </div>
+        </div>
+        <div class="slide2">
+            <div class="projects">
+                <img class="printlab" src="./img/printlab.png" alt="">
+                <h3 class="project_text">Printlab malmö</h3>
+                <div class="line_p"></div>
+            </div>
+            <div class="projects">
+                <img class="printlab" src="./img/printlab.png" alt="">
+                <h3 class="project_text">Printlab malmö</h3>
+                <div class="line_p"></div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-window" id="scene">
+            <img data-depth="0.1" class="indexing" src="./img/bg3.png" alt="">
+    </div>
+</body>
+<script src="js/main.js"></script>
+
+</html>
